@@ -33,7 +33,7 @@ import ContactModal from './components/ContactModal';
 import Toast from './components/Toast';
 
 // Reference to the user's uploaded photo
-const USER_PHOTO = "./profile_photo.png";
+import USER_PHOTO from "./profile_photo.png";
 
 const Tape = ({ className = "", text = "" }) => (
   <div className={`absolute z-20 tape-label px-4 py-1 text-[10px] font-mono tracking-tighter uppercase text-white/70 flex items-center gap-2 ${className}`}

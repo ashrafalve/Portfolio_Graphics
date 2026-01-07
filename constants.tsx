@@ -2,13 +2,28 @@
 import React from 'react';
 import { Project, Skill } from './types';
 
+import amazfitGtr4 from './images/amazfit gtr 4.jpg';
+import ribsUmbrella from './images/12 ribs umbrella.jpg';
+import culturalNight from './images/culturalnight.jpg';
+import concert from './images/concert.jpg';
+import bangladeshVsHongKong from './images/bangladesh vs hong kong match day.jpg';
+import appleAirTag from './images/apple airtag.jpg';
+import bplFootball from './images/bashundhara kings vs mohammedan bpl football 2024 2025.jpg';
+import bplRound2 from './images/mohammedan sc vs bashundhara kings bpl round 2 match day.jpg';
+import ramadanWork from './images/ramadanwork.jpg';
+import baseusLamp from './images/Baseus Smart Eye Series Rechargeable Folding Reading Desk Lamp Smart Light.jpg';
+import amazfitBanner from './images/amazfit cheetah web banner.jpg';
+import marchEvent from './images/march.jpg';
+import baseusStand from './images/basues mesh portable laptop stand 15 inch.jpg';
+import adCampaign from './images/ad5.jpg';
+
 export const PROJECTS: Project[] = [
   {
     id: '1',
     title: 'Amazfit GTR 4',
     category: ['Social Media', 'Poster'],
     tool: 'Photoshop',
-    imageUrl: './images/amazfit gtr 4.jpg',
+    imageUrl: amazfitGtr4,
     description: 'Social media graphics for Amazfit GTR 4 smartwatch product showcase.'
   },
   {
@@ -16,7 +31,7 @@ export const PROJECTS: Project[] = [
     title: '12 Ribs Umbrella',
     category: ['Social Media', 'Poster'],
     tool: 'Photoshop',
-    imageUrl: './images/12 ribs umbrella.jpg',
+    imageUrl: ribsUmbrella,
     description: 'Social media product showcase for premium umbrella branding and marketing.'
   },
   {
@@ -24,7 +39,7 @@ export const PROJECTS: Project[] = [
     title: 'Cultural Night',
     category: ['Social Media', 'Poster'],
     tool: 'Photoshop',
-    imageUrl: './images/culturalnight.jpg',
+    imageUrl: culturalNight,
     description: 'Social media poster for cultural event showcasing multicultural diversity and traditional motifs.'
   },
   {
@@ -32,7 +47,7 @@ export const PROJECTS: Project[] = [
     title: 'Concert Poster',
     category: ['Social Media', 'Poster'],
     tool: 'Photoshop',
-    imageUrl: './images/concert.jpg',
+    imageUrl: concert,
     description: 'Social media concert poster with musical elements and dynamic visual hierarchy.'
   },
   {
@@ -40,7 +55,7 @@ export const PROJECTS: Project[] = [
     title: 'Bangladesh vs Hong Kong',
     category: ['Social Media', 'Poster'],
     tool: 'Photoshop',
-    imageUrl: './images/bangladesh vs hong kong match day.jpg',
+    imageUrl: bangladeshVsHongKong,
     description: 'Social media graphics for Bangladesh vs Hong Kong cricket match tournament.'
   },
   {
@@ -48,7 +63,7 @@ export const PROJECTS: Project[] = [
     title: 'Apple AirTag Product',
     category: ['Social Media', 'Poster'],
     tool: 'Illustrator',
-    imageUrl: './images/apple airtag.jpg',
+    imageUrl: appleAirTag,
     description: 'Product showcase social media graphics for Apple AirTag with clean minimal design.'
   },
   {
@@ -56,7 +71,7 @@ export const PROJECTS: Project[] = [
     title: 'BPL Football Match',
     category: ['Social Media', 'Poster'],
     tool: 'Photoshop',
-    imageUrl: './images/bashundhara kings vs mohammedan bpl football 2024 2025.jpg',
+    imageUrl: bplFootball,
     description: 'Social media graphics for BPL football match season 2024-2025.'
   },
   {
@@ -64,7 +79,7 @@ export const PROJECTS: Project[] = [
     title: 'BPL Round 2',
     category: ['Social Media', 'Poster'],
     tool: 'Illustrator',
-    imageUrl: './images/mohammedan sc vs bashundhara kings bpl round 2 match day.jpg',
+    imageUrl: bplRound2,
     description: 'Social media match day graphics for Mohammedan SC vs Bashundhara Kings round 2.'
   },
   {
@@ -72,7 +87,7 @@ export const PROJECTS: Project[] = [
     title: 'Ramadan Campaign',
     category: ['Social Media', 'Poster'],
     tool: 'Canva',
-    imageUrl: './images/ramadanwork.jpg',
+    imageUrl: ramadanWork,
     description: 'Festive Ramadan campaign design for social media with traditional Islamic elements and modern typography.'
   },
   {
@@ -80,7 +95,7 @@ export const PROJECTS: Project[] = [
     title: 'Baseus Smart Lamp',
     category: ['Social Media', 'Poster'],
     tool: 'Illustrator',
-    imageUrl: './images/Baseus Smart Eye Series Rechargeable Folding Reading Desk Lamp Smart Light.jpg',
+    imageUrl: baseusLamp,
     description: 'Social media product photography for Baseus smart lamp series showcase.'
   },
   {
@@ -88,7 +103,7 @@ export const PROJECTS: Project[] = [
     title: 'Amazfit Cheetah Banner',
     category: 'Banner',
     tool: 'Photoshop',
-    imageUrl: './images/amazfit cheetah web banner.jpg',
+    imageUrl: amazfitBanner,
     description: 'Web banner design for Amazfit Cheetah smartwatch launch campaign.'
   },
   {
@@ -96,7 +111,7 @@ export const PROJECTS: Project[] = [
     title: 'March Event',
     category: ['Social Media', 'Poster'],
     tool: 'Canva',
-    imageUrl: './images/march.jpg',
+    imageUrl: marchEvent,
     description: 'Dynamic March celebration social media poster featuring bold color schemes and energetic composition.'
   },
   {
@@ -104,7 +119,7 @@ export const PROJECTS: Project[] = [
     title: 'Baseus Laptop Stand',
     category: 'Card',
     tool: 'Illustrator',
-    imageUrl: './images/basues mesh portable laptop stand 15 inch.jpg',
+    imageUrl: baseusStand,
     description: 'Product card design for Baseus portable laptop stand marketing materials.'
   },
   {
@@ -112,7 +127,7 @@ export const PROJECTS: Project[] = [
     title: 'Ad Campaign',
     category: 'Branding',
     tool: 'Photoshop',
-    imageUrl: './images/ad5.jpg',
+    imageUrl: adCampaign,
     description: 'Comprehensive advertising campaign with brand identity and visual consistency.'
   }
 ];

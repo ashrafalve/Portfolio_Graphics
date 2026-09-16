@@ -160,7 +160,7 @@ const App: React.FC = () => {
 
       {/* Navigation */}
       <nav className="fixed top-0 left-0 w-full z-[90] px-8 py-8 flex justify-between items-start pointer-events-none">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           className="pointer-events-auto cursor-pointer"
@@ -169,13 +169,13 @@ const App: React.FC = () => {
           <div className="bg-white text-black px-4 py-1 font-black text-xl tracking-tighter mb-1 uppercase">ASHRAF AHMED ALVE</div>
           <div className="bg-purple-600 text-white px-2 py-0.5 text-[9px] font-mono font-bold tracking-[0.3em] uppercase inline-block">Designer</div>
         </motion.div>
-        
-        <div className="flex flex-col items-end gap-2 pointer-events-auto">
+
+        <div className="hidden sm:flex flex-col items-end gap-2 pointer-events-auto">
           <div className="flex gap-6 bg-black/40 backdrop-blur-xl border border-white/5 rounded-full px-8 py-3 text-[10px] font-bold tracking-widest uppercase">
             {['Works', 'Specs', 'Contact', 'Switch Portfolio'].map((item) => (
               <button
                 key={item}
-                onClick={() => item === 'Switch Portfolio' ? window.open('https://ashrafalve.netlify.app/', '_blank', 'noopener,noreferrer') : handleSmoothScroll(item.toLowerCase().replace(' ', ''))}
+                onClick={() => item === 'Switch Portfolio' ? window.open('https://ashrafalve.indevs.in/', '_blank', 'noopener,noreferrer') : handleSmoothScroll(item.toLowerCase().replace(' ', ''))}
                 className="hover:text-purple-400 transition-colors flex items-center gap-1"
               >
                 {item === 'Switch Portfolio' && <MonitorSmartphone className="w-3 h-3" />}
@@ -188,6 +188,34 @@ const App: React.FC = () => {
             className="px-8 py-3 bg-purple-600 text-white text-[10px] font-black uppercase tracking-[0.2em] rounded-full hover:bg-white hover:text-black transition-all shadow-xl shadow-purple-600/20"
           >
             Hire Alve
+          </button>
+        </div>
+      </nav>
+
+      {/* Mobile Bottom App-Style Navbar */}
+      <nav className="sm:hidden fixed bottom-0 left-0 w-full z-[90] pointer-events-auto">
+        <div className="mx-4 mb-4 bg-black/80 backdrop-blur-2xl border border-white/10 rounded-3xl px-2 py-2 flex items-center justify-around shadow-2xl shadow-black/50">
+          {[
+            { label: 'Works', icon: Layers, action: () => handleSmoothScroll('works') },
+            { label: 'Specs', icon: Monitor, action: () => handleSmoothScroll('specs') },
+            { label: 'Contact', icon: Mail, action: () => handleSmoothScroll('contact') },
+            { label: 'Switch', icon: MonitorSmartphone, action: () => window.open('https://ashrafalve.indevs.in/', '_blank', 'noopener,noreferrer') },
+          ].map((item) => (
+            <button
+              key={item.label}
+              onClick={item.action}
+              className="flex flex-col items-center gap-1 px-3 py-2 rounded-2xl text-[9px] font-black uppercase tracking-widest text-zinc-400 hover:text-purple-400 hover:bg-white/5 transition-all"
+            >
+              <item.icon className="w-5 h-5" />
+              <span>{item.label}</span>
+            </button>
+          ))}
+          <button
+            onClick={() => setIsContactOpen(true)}
+            className="flex flex-col items-center gap-1 px-4 py-2 rounded-2xl bg-purple-600 text-white text-[9px] font-black uppercase tracking-widest shadow-lg shadow-purple-600/40 hover:bg-purple-500 transition-all"
+          >
+            <Stamp className="w-5 h-5" />
+            <span>Hire</span>
           </button>
         </div>
       </nav>
@@ -303,11 +331,11 @@ const App: React.FC = () => {
                    <Tape className="top-2 md:top-4 -right-4 md:-right-8 rotate-45 w-24 md:w-32 bg-white/10 text-[8px] md:text-[10px]" text={project.tool} />
                    <Tape className="-bottom-1 md:-bottom-2 left-6 md:left-10 -rotate-2 w-32 md:w-40 bg-purple-500/40 text-[8px] md:text-[10px]" text={Array.isArray(project.category) ? project.category[0] : project.category} />
                    
-                   <img 
-                     src={project.imageUrl} 
-                     alt={project.title}
-                     className="w-full h-full object-contain opacity-80 group-hover:opacity-100 md:group-hover:scale-105 transition-all duration-700 filter grayscale group-hover:grayscale-0 p-2 md:p-4"
-                   />
+<img 
+                      src={project.imageUrl} 
+                      alt={project.title}
+                      className="w-full h-full object-contain opacity-80 group-hover:opacity-100 md:group-hover:scale-105 transition-all duration-700 filter grayscale-0 sm:grayscale group-hover:grayscale-0 p-2 md:p-4"
+                    />
                   
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 md:p-8">
                     <h3 className="text-lg md:text-3xl font-black leading-none mb-2 font-space uppercase italic">{project.title}</h3>

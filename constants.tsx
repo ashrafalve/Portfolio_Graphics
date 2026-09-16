@@ -16,6 +16,9 @@ import amazfitBanner from './images/amazfit cheetah web banner.jpg';
 import marchEvent from './images/march.jpg';
 import baseusStand from './images/basues mesh portable laptop stand 15 inch.jpg';
 import adCampaign from './images/ad5.jpg';
+import ticketdrkrlogo from './images/ticketdrkrlogo.png';
+import poster1 from './images/poster1.webp';
+import posters from './images/posters.png';
 
 export const PROJECTS: Project[] = [
   {
@@ -129,6 +132,30 @@ export const PROJECTS: Project[] = [
     tool: 'Photoshop',
     imageUrl: adCampaign,
     description: 'Comprehensive advertising campaign with brand identity and visual consistency.'
+  },
+  {
+    id: '15',
+    title: 'Ticket Drkr Logo',
+    category: 'Branding',
+    tool: 'Illustrator',
+    imageUrl: ticketdrkrlogo,
+    description: 'Brand logo design for Ticket Drkr identity and visual mark.'
+  },
+  {
+    id: '16',
+    title: 'Poster 1',
+    category: ['Social Media', 'Poster'],
+    tool: 'Canva',
+    imageUrl: poster1,
+    description: 'Poster design crafted with Canva for social media engagement.'
+  },
+  {
+    id: '17',
+    title: 'Posters',
+    category: ['Social Media', 'Poster'],
+    tool: 'Canva',
+    imageUrl: posters,
+    description: 'Set of poster designs created in Canva for social campaigns.'
   }
 ];
 
